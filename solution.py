@@ -58,8 +58,6 @@ def block_by_brand(ltable, rtable):
 
 # blocking to reduce the number of pairs to be compared
 candset = block_by_brand(ltable, rtable)
-print("number of pairs originally", ltable.shape[0] * rtable.shape[0])
-print("number of pairs after blocking",len(candset))
 candset_df = pairs2LR(ltable, rtable, candset)
 
 
